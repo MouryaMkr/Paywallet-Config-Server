@@ -1,0 +1,10 @@
+## Eureka: here we will be subscribing to the eureka server
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registery: true
+    service-url: #This will goes and connect to the Eureka server
+      defaultZone: http://localhost:8761/eureka/  #Currently we are running in the local. if we are running in the
+      #production we need to give that.
+  instance:
+    hostname: localhost
